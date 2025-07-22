@@ -5,171 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization - My Projects Portfolio</title>
     <link rel="stylesheet" href="../../styles.css">
-    <style>
-        /* Project-specific styles */
-        .project-banner {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .project-banner h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-        }
-        
-        .project-banner p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .project-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        .project-title {
-            color: #2c3e50;
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        
-        .project-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 2rem;
-            text-align: center;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .project-gif {
-            text-align: center;
-            margin: 3rem 0;
-        }
-        
-        .project-gif img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .project-details {
-            margin: 3rem 0;
-        }
-        
-        .project-details p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-        
-        .project-features {
-            list-style: none;
-            padding: 0;
-            margin-left: 2cm;
-        }
-        
-        .project-features li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            font-size: 1rem;
-            color: #666;
-        }
-        
-        .project-features li:before {
-            content: "•";
-            color: #667eea;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0;
-        }
-        
-        /* Flexible image grid */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
-        
-        /* For exactly 6 images, you can also use this more specific layout */
-        .image-grid.six-images {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        
-        .image-grid img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .image-grid img:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .image-grid.six-images {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .image-grid,
-            .image-grid.six-images {
-                grid-template-columns: 1fr;
-            }
-            
-            .project-banner h1 {
-                font-size: 2rem;
-            }
-            
-            .project-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Banner at the top -->
+    <!-- Project Banner -->
     <div class="project-banner">
         <h1>Data Visualization Dashboard</h1>
         <p>Interactive Analytics Platform</p>
     </div>
 
+    <!-- Main Content -->
     <div class="project-content">
+        <!-- Navigation -->
         <a href="../../index.html" class="back-link">Back to Portfolio</a>
         
-        <!-- Project name and description -->
-        <h1 class="project-title">Data Visualization</h1>
-        <p class="project-description">
-            An interactive dashboard for comprehensive data analysis built with D3.js and Python backend. 
-            This project transforms complex datasets into intuitive visual representations, enabling users to 
-            discover insights and make data-driven decisions through dynamic charts, graphs, and real-time analytics.
-        </p>
+        <!-- Project Title and Description -->
+        <section class="project-intro">
+            <h1 class="project-title">Data Visualization</h1>
+            <p class="project-description">
+                An interactive dashboard for comprehensive data analysis built with D3.js and Python backend. 
+                This project transforms complex datasets into intuitive visual representations, enabling users to 
+                discover insights and make data-driven decisions through dynamic charts, graphs, and real-time analytics.
+            </p>
+        </section>
         
-        <!-- GIF showcase -->
-        <div class="project-gif">
-            <img src="../../images/data-viz-demo.gif" alt="Data Visualization Demo" onerror="this.src='../../images/placeholder.png'">
-        </div>
+        <!-- Demo GIF -->
+        <section class="project-gif">
+            <img src="../../images/data-viz-demo.gif" 
+                 alt="Data Visualization Demo" 
+                 onerror="this.src='../../images/placeholder.png'">
+        </section>
         
-        <!-- Another paragraph and bullet points -->
-        <div class="project-details">
+        <!-- Project Details and Features -->
+        <section class="project-details">
             <p>
                 This comprehensive data visualization platform offers a wide range of features designed to 
                 make complex data accessible and actionable. The system integrates seamlessly with various 
@@ -184,19 +52,34 @@
                 <li>Integration with multiple data sources and APIs</li>
                 <li>Responsive design optimized for desktop and mobile devices</li>
             </ul>
-        </div>
+        </section>
         
-        <!-- 6 images in a flexible grid -->
-        <div class="image-grid six-images">
-            <img src="../../images/dataviz-1.jpg" alt="Dashboard Overview" onerror="this.src='../../images/placeholder.png'">
-            <img src="../../images/dataviz-2.jpg" alt="Chart Builder" onerror="this.src='../../images/placeholder.png'">
-            <img src="../../images/dataviz-3.jpg" alt="Real-time Analytics" onerror="this.src='../../images/placeholder.png'">
-            <img src="../../images/dataviz-4.jpg" alt="Data Filtering" onerror="this.src='../../images/placeholder.png'">
-            <img src="../../images/dataviz-5.jpg" alt="Export Options" onerror="this.src='../../images/placeholder.png'">
-            <img src="../../images/dataviz-6.jpg" alt="Mobile View" onerror="this.src='../../images/placeholder.png'">
-        </div>
+        <!-- Image Gallery -->
+        <section class="image-gallery">
+            <div class="image-grid six-images">
+                <img src="../../images/dataviz-1.jpg" 
+                     alt="Dashboard Overview" 
+                     onerror="this.src='../../images/placeholder.png'">
+                <img src="../../images/dataviz-2.jpg" 
+                     alt="Chart Builder" 
+                     onerror="this.src='../../images/placeholder.png'">
+                <img src="../../images/dataviz-3.jpg" 
+                     alt="Real-time Analytics" 
+                     onerror="this.src='../../images/placeholder.png'">
+                <img src="../../images/dataviz-4.jpg" 
+                     alt="Data Filtering" 
+                     onerror="this.src='../../images/placeholder.png'">
+                <img src="../../images/dataviz-5.jpg" 
+                     alt="Export Options" 
+                     onerror="this.src='../../images/placeholder.png'">
+                <img src="../../images/dataviz-6.jpg" 
+                     alt="Mobile View" 
+                     onerror="this.src='../../images/placeholder.png'">
+            </div>
+        </section>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 My Projects Portfolio. All rights reserved.</p>
     </footer>
