@@ -11,18 +11,157 @@
     <!-- Project Banner -->
     <div class="project-banner">
         <h1>Pet Feeder</h1>
-        <p>Project Description</p>
+        <p>Automated programmable kibble dispenser</p>
     </div>
 
     <!-- Main Content -->
     <div class="project-content">
         <!-- Navigation -->
-        <a href="../../index.html" class="back-link">Back to Portfolio</a>
+         <a href="../../index.html" class="back-link">Back to Portfolio</a>
 		
+        <!-- Project Title and Description -->
+        <!--<section class="project-intro">
+            <h1 class="project-title">Data Visualization</h1>
+            <p class="project-description">
+                An interactive dashboard for comprehensive data analysis built with D3.js and Python backend. 
+                This project transforms complex datasets into intuitive visual representations, enabling users to 
+                discover insights and make data-driven decisions through dynamic charts, graphs, and real-time analytics.
+            </p>
+        </section>-->
+
+        <section class="project-details">
+            <p>
+                This project consist of a food reservoir, that automates serves the food at the specified times of the day. 
+                It is designed for pet food such as dog or cat kibble. 
+                It's interface is thought to allow the user to program as many as many times of the day and as many servings
+                needed depending on the size and customs of the animal.
+            </p>
+        </section>
+
+        <section class="project-gif">
+            <img src="../../images/pet-feeder-pictures/dog-feeder-1.png"
+                 alt="Pet Feeder Image" 
+                 onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <p>
+                The design started from approaching a real life problem, considering the needs of possible users,
+                and thought to be easily manufactured and affordable.
+            </p>
+            <p>
+                The device consist of a rotating sphere with a hole in the upper side. The sphere volume is around half a cup, and is filled with 
+                kibble by a hopper situated
+                above the sphere, and the latter should rotate around 180° to pour its content onto a ramp, that leads to the user's food recipient.
+                This process is repeated as many times as needed to fulfill the serving size required by the user.
+            </p>
+            <p>
+                The design it's thought to use accessible and affordable manufacturing methods at the time.
+                It requires mostly laser cutting, which tends to be cheap for prototyping; and also have some parts to be made with 3D printing,
+                such as the sphere.
+            </p>
+
+            <p>
+                The tools used for this project are the following:
+            </p>
+            
+            <ul class="project-features">
+                <li>AutoDesk Inventor is used for modeling the hardware and consider each component dimensions requirements.</li>
+                <li>
+                    C++ is used through the Arduino platform for programming both the logic as a state machine, and the interface
+                    with the LCD screen.
+                </li>
+                <li>
+                    Microcontroller programming is done through the Arduino platform, which required the selection of a small
+                    microcontroller which also had the required IO ports for the project.
+                </li>
+                <li>An actuator-system interface was built to control the servomotor used to rotate the servings sphere.</li>
+                <li>
+                    An LCD screen is used as interface, displaying a menu that allows to (1) create new programs with time and
+                    number of servings, (2) check or delete existing programs, (3) set the current time and (4) pour a serving by command.
+                </li>
+                <li>
+                    Push buttons are selected as a desired input as a human-system interface, since its color coding and simplicity
+                    makes the system intuitive.
+                </li>
+            </ul>
+        </section>
+
+        
+
+        <section class="project-gif">
+            <img src="../../images/pet-feeder-pictures/dog-feeder-7.png"
+                 alt="Pet Feeder Image" 
+                 onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <h1 class="project-title">Manufactured Prototype</h1>
+            <p>
+                A functional prototype was successfully manufactured. This allowed to validate the real functionality of the design,
+                from tolerances and building process, to user interaction and the satisfaction of its needs.
+            </p>
+        </section>
+
         <section class="project-gif">
             <img src="../../images/pet-feeder-pictures/video-screenshot.png"
                  alt="Pet Feeder Image" 
                  onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <p>
+                The video below shows the prototype running a program to pour 10 portions.
+                One of the hopper walls was temporarily removed for visibility purposes.
+                -- Please forgive the homemade-ness of the video, I'll update it soon (^‿^)
+            </p>
+        </section>
+
+        <section class="project-gif">
+            <video width="400px" height="100%" autoplay muted controls>
+                <source src="../../images/pet-feeder-pictures/video_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="project-details">
+            <h1 class="project-title">Future Improvements</h1>
+            <p>
+                Although the design is mostly useful, there is room for improvement in some areas.
+            </p>
+            <ul class="project-features">
+                <li>The rotating sphere gets stuck sometimes, due to kibble interposing at the border between the hopper and the sphere.
+                    This can be addressed by modifying the hopper by using a flexible material or a brush, or using a different mechanism like
+                    an screw conveyor.
+                </li>
+                <li>Sturdiness: Although the current design is significantly sturdy against most animals, the material and its unions can be
+                    improved to withstand biting and stomping of big animals.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="image-gallery">
+            <div class="image-grid six-images">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-8.png"
+                     alt="Dashboard Overview" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-1.png"
+                     alt="Chart Builder" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-5.png"
+                     alt="Real-time Analytics" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-2.png"
+                     alt="Data Filtering" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-4.png"
+                     alt="Export Options" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+                <img src="../../images/pet-feeder-pictures/dog-feeder-6.png"
+                     alt="Mobile View" 
+                     onerror="this.src='../../images/placeholder_2.png'">
+            </div>
         </section>
 	</div>
 
