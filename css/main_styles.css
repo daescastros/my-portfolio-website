@@ -144,15 +144,29 @@ footer {
 
 .back-link {
     display: inline-block;
+    padding: 10px 18px;
     margin-bottom: 2rem;
-    color: #667eea;
+    background-color: #667eea;
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
+/*
 .back-link:hover {
     color: #764ba2;
+}
+
+.back-link::before {
+    content: "← ";
+    margin-right: 0.5rem;
+}
+*/
+.back-link:hover {
+    background-color: #764ba2;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .back-link::before {
