@@ -11,7 +11,7 @@
     <!-- Project Banner -->
     <div class="project-banner">
         <h1>Walking Robot</h1>
-        <p>ROS2 Digital-Twin of a two-legged Robot</p>
+        <p>ROS2 and Gazebo simulation of a two-legged Robot</p>
     </div>
 
     <!-- Main Content -->
@@ -19,11 +19,12 @@
         <!-- Navigation -->
         <a href="../../index.html" class="back-link">Back to Portfolio</a>
         
-        <!-- Project Title and Description -->
-        <section class="project-intro">
-            <h1 class="project-title">Desk Walking Robot</h1>
-            <p class="project-description">
-                Digital Twin in ROS2 and Gazebo of a robot with two legs that walks.
+        <section class="project-details">
+            <p>
+                This project consists on a simulation of a walking two-legged robot, with a frontal camera.
+                The simulation allows to integrate multiple tools: the 3D model building,
+                the Gazebo configuration with moving parts,
+                and the ROS2 communication of the different modules.
             </p>
         </section>
 
@@ -32,10 +33,69 @@
                  alt="Robot Walking Gazebo 1" 
                  onerror="this.src='../../images/spincat.gif'">
         </section>
+
+        <section class="project-details">
+            <p>
+                The robot is conformed by a main body which holds a camera in the middle front,
+                two vertical legs (Y-axis, normal to the floor) that have one degree of freedom to rotate around their geometrical axis;
+                and two plates that work as feet, and have one degrees of freedom that is in the Z-axis,
+                that allows the robot to tilt from side to side.
+            </p>
+            <p>
+                The tools and skills used for the simulation are the following:
+            </p>
+            <ul class="project-features">
+                <li>
+                    <strong>Xacro</strong> is used to generate the <strong>3D model</strong> upon the <strong>URDF</strong> format, defining moving parts,
+                    collision boxes and inertia of each part.
+                </li>
+                <li>
+                    <strong>RViz</strong> is used to visually verify the 3D model, and the correct communication between
+                    ROS2 and Gazebo, by validating collisions, movements and the camera image.
+                </li>
+                <li>
+                    <strong>Python</strong> is used to create <strong>nodes, services, topics and parameters</strong> in ROS2,
+                    allowing to move the robot within the simulation through ROS2 commands.
+                </li>
+                <li>
+                    <strong>ROS2</strong> is used to integrate the whole system, setting the 3D model in the simulation space, enabling the camera, and allowing
+                    communication and control of the system.
+                </li>
+                <li>
+                    <strong>Gazebo</strong> is used as the simulation and physics engine, interpreting the model in a physical space, and allowing to capture
+                    image through the camera and sending it back to ROS2 along with all the joints and movement data.
+                </li>
+            </ul>
+        </section>
+
         <section class="project-gif">
             <img src="..\..\images\desk-robot-pictures\0-cut16_9-ros2-robot.png"
                  alt="Robot Walking Gazebo 2" 
                  onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <p>
+                The walking sequence of the robot goes as follows:
+                Starting from a position with both feet on the floor.
+                The robot tilts to one side, putting all the weight in foot 1 so the foot 2 is in the air.
+                This movement uses foot 1 and foot 2 Z-axis rotation to displace the center of mass.
+                Next, the robot rotates over foot 1 so foot 2 moves in the forward direction, still in the air.
+                This movement uses hip rotation from leg 1 Y-axis.
+                From here, the robot tilts back to putting both feet in the floor,
+                but with foot 2 ahead of foot 1 in the walking direction. Next step is to repeat the process tilting
+                the robot over foot 2, to perform the second step forward of the robot. The process causes a waddle walking.
+            </p>
+            <p>
+                Some stages are still in progress for this projects. An AutoDesk Fusion360 model is in progress for a manufacturable version
+                of the robot, for which the electronics components are being selected. And the walking sequence is yet to be programmed,
+                since currently the robot simulation can only move using one-by-one ROS2 commands for each step.
+            </p>
+            <p>
+                In the gifs below you can appreciate Gazebo on the left,
+                and some gifs show RViz on the right with a view of the robot camera in the bottom left, while other gifs show ROS2 codes being run
+                for each of the robots degrees of freedom.
+            </p>
         </section>
         
         <!-- Image Gallery -->

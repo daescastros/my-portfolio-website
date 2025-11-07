@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Control and Data Logging - My Projects Portfolio</title>
+    <link rel="stylesheet" href="../../css/main_styles.css">
+	<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <!-- Project Banner -->
+    <div class="project-banner">
+        <h1>Force Control and Data Logging</h1>
+        <p>Design of an automated measuring device.</p>
+    </div>
+
+    <div class="project-content">
+        <!-- Navigation -->
+         <a href="../../index.html" class="back-link">Back to Portfolio</a>
+
+        <section class="project-details">
+            <p>
+                This project consists on the design of a force control system, used to apply a specific clamping force to a PCB.
+                Additional to the control system, it also involved the design of a system for data logging, plotting, reporting,
+                and an HMI touch interface development.
+            </p>
+        </section>
+
+        <section class="project-gif">
+            <img src="../../images/tfg-tec/render_1.png"
+                 alt="Device Render 1" 
+                 onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <p>
+                The force control applies a specific force to a PCB to make a variety of measurements,
+                using a state machine to manage all the steps from user input to clamping and measuring.
+                This force has to comply with restrictions to simulate real use conditions of the PCB,
+                for which the device uses force sensors and circuits used for signal conditioning, a
+                microcontroller, and pneumatic SCADA (PLC/SPS) equipment such as actuators, flow regulators, and valves.
+            </p>
+            <p>
+                The data logging and reporting system creates a data base with the sensors' and other data sent from the microcontroller to a centralized PC,
+                where a report is automatically updated, creating predefined and customized plots.
+            </p>
+            <p>
+                An HMI was added to the device using an intuitive interface for the use of an operator. The HMI shares data in both directions with the microcontroller,
+                enabling not only control and useful measuring data from the device, but also allowing emergency states and calibration or
+                configuration of the device.
+            </p>
+        </section>
+
+        <section class="project-gif">
+            <img src="../../images/tfg-tec/render_2.png"
+                 alt="Device Render 1" 
+                 onerror="this.src='../../images/spincat.gif'">
+        </section>
+
+        <section class="project-details">
+            <h1 class="project-title">Tools and skills</h1>
+            <ul class="project-features">
+                <li><strong>Microcontroller programming</strong> through the <strong>Arduino</strong> platform and <strong>C++</strong> coding.</li>
+                <li><strong>Signal conditioning</strong> through both hardware and software for the force sensors</li>
+                <li><strong>SCADA logic (PLC/SPS)</strong> through custom code in the microcontroller</li>
+                <li>
+                    <strong>Python</strong> programming and <strong>HTML</strong> for the microcontroller-computer communication,
+                    data base creation and reports generation.
+                </li>
+                <li><strong>HMI</strong> hardware and software configuration through OEM tools.</li>
+                <li><strong>Fusion360</strong> for the hardware assembly.</li>
+                <li>PCB <strong>circuit design</strong>, <strong>CAD</strong> generation, assembly and soldering, tested and validated. </li>
+                <li>Documentation and creation of an specifications table.</li>
+            </ul>
+        </section>
+
+        <section class="project-gif">
+            <video width="900px" height="100%" autoplay muted controls>
+                <source src="../../images/tfg-tec/video_1_720p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Projects Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
